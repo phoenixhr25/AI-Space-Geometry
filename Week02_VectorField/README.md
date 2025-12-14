@@ -19,15 +19,15 @@
 ## 🧮 数学定义
 
 顾客路径向量定义：
-$$
-\vec{v_i} = (dx_i, dy_i) = (x_{end} - x_{start}, y_{end} - y_{start})
-$$
 
+![Path vector definition](https://latex.codecogs.com/svg.image?\vec{v_i}%20=%20(dx_i,%20dy_i)%20=%20(x_{end}%20-%20x_{start},%20y_{end}%20-%20y_{start}))
 
 方向相似度由 **余弦相似度** 衡量：
-$$
-\cos(\theta_{ij}) = \frac{\vec{v_i} \cdot \vec{v_j}}{\|\vec{v_i}\|\|\vec{v_j}\|}
-$$
+
+![Cosine similarity](https://latex.codecogs.com/svg.image?\cos(\theta_{ij})%20=%20\frac{\vec{v_i}\cdot\vec{v_j}}{\left\Vert\vec{v_i}\right\Vert\left\Vert\vec{v_j}\right\Vert})
+
+当 cos(θ) ≈ 1，表示两条路径方向几乎相同。
+
 
 
 当 cos(θ) ≈ 1，表示两条路径方向几乎相同。
