@@ -63,4 +63,4 @@ AI Space Geometry 是一个跨学科项目：
 ---
 
 > ✳️ Latest Update：Week 2 · Vector Field (2025-12-15)  
-> 🔗 Project Homepage：[https://github.com/phoenixhr25/AI-Space-Geometry] https://github.com/phoenixhr25/AI-Space-Geometry
+> 🔗 Project Homepage：[https://phoenixhr25.github.io/AI-Space-Geometry/](https://phoenixhr25.github.io/AI-Space-Geometry/)
