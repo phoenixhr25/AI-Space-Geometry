@@ -1,3 +1,8 @@
+<!-- MathJax for GitHub Pages -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 # Week 2 · 顾客路径的向量空间 (Vector Field of Customer Paths)
 
 > 📅 2025.12.09 – 12.15  
