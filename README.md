@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./banner.png" alt="AI Space Geometry Banner" width="100%">
+</p>
 # AI-Space-Geometry
 Geometry × Retail × AI — Weekly space/geometry notes
 # 🌌 AI Space Geometry
