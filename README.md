@@ -57,10 +57,10 @@ AI Space Geometry 是一个跨学科项目：
 
 ## 🪶 作者
 
-**Phoenix Hui** — Data & AI Analyst, The Home Depot China  
+**Phoenix Hui**
 **ChatGPT-5** — Co-Author / AI Professor System  
 
 ---
 
 > ✳️ Latest Update：Week 2 · Vector Field (2025-12-15)  
-> 🔗 Project Homepage：[https://github.com/phoenixhui/AI-Space-Geometry](https://github.com/phoenixhui/AI-Space-Geometry)
+> 🔗 Project Homepage：[https://github.com/phoenixhr25/AI-Space-Geometry] https://github.com/phoenixhr25/AI-Space-Geometry
