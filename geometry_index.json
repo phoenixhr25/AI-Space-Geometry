@@ -1,0 +1,18 @@
+[
+  {
+    "week": 1,
+    "folder": "Week01_GradientValley",
+    "title": "梯度的山谷 Gradient Valley",
+    "math_core": "Gradient Descent / Loss Surface",
+    "retail_use": "门店能量坡度分析",
+    "path": "./Week01_GradientValley/README.md"
+  },
+  {
+    "week": 2,
+    "folder": "Week02_VectorField",
+    "title": "顾客路径的向量空间 Vector Field",
+    "math_core": "Vector Field / Cosine Similarity",
+    "retail_use": "顾客动线聚类与吸引力中心",
+    "path": "./Week02_VectorField/README.md"
+  }
+]
