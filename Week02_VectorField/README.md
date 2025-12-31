@@ -53,5 +53,118 @@
 ```csv
 store_id,path_id,start_x,start_y,end_x,end_y,dx,dy,basket_sales
 8119,v_0001,0.0,5.2,6.5,7.8,6.5,2.6,120.0
+
+
+
+
+## Python 示例（Vector Field + Flow Families）
+
+目标：
+1）把每条顾客路径变成方向向量
+2）用方向聚类得到 Flow Families
+3）用 不同颜色在图上展示不同 Flow
+4）画出每个 Flow 的 主流线（Flow Line）
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+
+# ----------------------------
+# 1) Input: path-level data
+# ----------------------------
+# Replace this demo with: df = pd.read_csv("your_paths.csv")
+df = pd.DataFrame({
+    "store_id":[8119, 8119, 8119, 8119],
+    "path_id":["v_0001","v_0002","v_0003","v_0004"],
+    "start_x":[0.0, 0.0, 0.0, 0.0],
+    "start_y":[5.2, 2.2, 9.2, 6.0],
+    "end_x":[6.5, 7.8, 6.9, 7.2],
+    "end_y":[7.8, 2.1, 8.1, 5.2],
+    "basket_sales":[120.0, 90.0, 180.0, 110.0],
+})
+
+# ----------------------------
+# 2) Path vectors
+# ----------------------------
+df["dx"] = df["end_x"] - df["start_x"]
+df["dy"] = df["end_y"] - df["start_y"]
+
+# ----------------------------
+# 3) Direction-normalize (key!)
+#    We cluster "direction", not "distance"
+# ----------------------------
+vec = df[["dx","dy"]].values
+norm = np.linalg.norm(vec, axis=1, keepdims=True)
+df["ux"] = vec[:, 0] / norm[:, 0]
+df["uy"] = vec[:, 1] / norm[:, 0]
+
+# ----------------------------
+# 4) Cluster by direction
+# ----------------------------
+k = 2  # tune: 2~6 typical
+kmeans = KMeans(n_clusters=k, n_init=10, random_state=0)
+df["flow"] = kmeans.fit_predict(df[["ux","uy"]])
+
+# ----------------------------
+# 5) Plot: colored vector field + flow line
+# ----------------------------
+colors = {
+    0: "#1f77b4",  # blue
+    1: "#d62728",  # red
+    2: "#2ca02c",
+    3: "#ff7f0e",
+    4: "#9467bd",
+    5: "#8c564b",
+}
+
+plt.figure(figsize=(8,5))
+
+for c in sorted(df["flow"].unique()):
+    sub = df[df["flow"] == c]
+
+    # (a) individual vectors (direction-only)
+    plt.quiver(
+        sub["start_x"], sub["start_y"],
+        sub["ux"], sub["uy"],
+        angles="xy",
+        scale_units="xy",
+        scale=0.35,
+        width=0.006,
+        alpha=0.80,
+        color=colors.get(c, "black"),
+        label=f"Flow {c}"
+    )
+
+    # (b) flow line = mean direction at mean start point (thicker arrow)
+    mx, my = sub["start_x"].mean(), sub["start_y"].mean()
+    mux, muy = sub["ux"].mean(), sub["uy"].mean()
+    plt.arrow(
+        mx, my,
+        mux, muy,
+        width=0.020,
+        alpha=0.90,
+        color=colors.get(c, "black"),
+        length_includes_head=True
+    )
+
+plt.title("Customer Path Vector Field (Direction-Normalized)")
+plt.xlabel("Store Width (X)")
+plt.ylabel("Store Depth (Y)")
+plt.axis("equal")       # preserve geometry
+plt.legend()
+plt.tight_layout()
+
+plt.savefig("customer_vector_field.png", dpi=200)
+plt.show()
+
+# ----------------------------
+# 6) Output table for Feishu template
+# ----------------------------
+df.to_csv("customer_paths_with_flow.csv", index=False)
+print("Saved: customer_vector_field.png, customer_paths_with_flow.csv")
+
+
+
 8119,v_0002,0.0,2.2,7.8,2.1,7.8,-0.1,90.0
 8119,v_0003,0.0,9.2,6.9,8.1,6.9,-1.1,180.0
