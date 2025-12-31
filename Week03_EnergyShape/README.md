@@ -17,13 +17,12 @@
  平滑而宽阔 → 稳定、可泛化
  
  系统的命运，写在能量的形状里。
- 
+ ---
 
-****🧮 数学定义（网页图形式）****
+###🧮 数学定义
 能量面（Loss Landscape）
 
-模型参数 𝜃
-θ 的每一个位置，都对应着能量面上的一个高度。
+模型参数θ 的每一个位置，都对应着能量面上的一个高度。
 
 梯度下降在能量面上的运动
 ![gd](https://latex.codecogs.com/svg.image?\theta_{t+1}=\theta_t-\eta\nabla_{\theta}L(\theta_t))
@@ -31,7 +30,7 @@
 这是 Week 1 的“下山公式”，  
 但在这一周，我们关注的是：在什么样的地形上，这个公式才是安全的？
 
-### 能量形状与稳定性（直觉表达）
+ 能量形状与稳定性（直觉表达）
 ![flat](https://latex.codecogs.com/svg.image?Flat%20minima%20%5CRightarrow%20Stability)
 
 ![sharp](https://latex.codecogs.com/svg.image?Sharp%20minima%20%5CRightarrow%20Instability)
@@ -41,6 +40,7 @@
  
  尖谷（Sharp Minima）：
  参数轻微变化，能量剧烈震荡 → 脆弱
+---
 
 **🧠 AI 视角：为什么“噪声”反而有用**
 在实践中，许多_机制_的真实作用，并不是“更快下降”，而是重塑能量的形状，比如：
