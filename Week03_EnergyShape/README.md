@@ -30,10 +30,9 @@
 但在这一周，我们关注的是：在什么样的地形上，这个公式才是安全的？
 
 ### 能量形状与稳定性（直觉表达）
+![flat](https://latex.codecogs.com/svg.image?Flat%20minima%20%5CRightarrow%20Stability)
 
-![flat](https://latex.codecogs.com/svg.image?Flat\minima\Rightarrow Stability)
-
-![sharp](https://latex.codecogs.com/svg.image?Sharp\ minima\Rightarrow Instability)
+![sharp](https://latex.codecogs.com/svg.image?Sharp%20minima%20%5CRightarrow%20Instability)
 
  宽谷（Flat Minima）：
  参数微小扰动，能量变化不大 → 稳定
