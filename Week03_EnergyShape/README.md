@@ -1,4 +1,4 @@
-Week 3 · 能量的形状（The Shape of Energy）
+**Week 3 · 能量的形状（The Shape of Energy）**
 
 📅 2025.12.16 – 12.22
 📍 AI Space Geometry 系列｜Geometry × Retail × AI
