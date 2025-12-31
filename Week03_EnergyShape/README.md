@@ -1,9 +1,10 @@
 **Week 3 · 能量的形状（The Shape of Energy）**
 
-📅 2025.12.16 – 12.22
-📍 AI Space Geometry 系列｜Geometry × Retail × AI
-🎯 主题：能量的形状，决定系统的命运
+> 📅 2025.12.16 – 12.22
+> 📍 AI Space Geometry 系列｜Geometry × Retail × AI
+> 🎯 主题：能量的形状，决定系统的命运
 
+---
 **🧭 几何视角（Geometry View）**
 
 如果说 Week 1 讨论的是如何下山，Week 2 讨论的是沿着哪条方向流动，那么 Week 3 关心的是一个更本质的问题：
