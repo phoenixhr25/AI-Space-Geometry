@@ -77,7 +77,7 @@ Top SKU 销量占比
 
 ---
 ## 📊 输出模板（Pro）
- 《能量形状效率分析》
+ 👉 [《能量形状效率分析》](https://ai.feishu.cn/sheets/xxxx)（飞书 Pro 模板）
 
  包括：
  类目 / 区域销量分布曲线
