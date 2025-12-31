@@ -16,8 +16,8 @@ Geometry × Retail × AI — Weekly space/geometry notes
 
 AI Space Geometry 是一个跨学科项目：  
 以数学几何为语言，连接零售空间、AI 算法与人类行为模式。  
-每周一篇，结合公式、代码、图像与飞书模板，  
-帮助你用“空间直觉”洞察结构、效率与注意力流动。
+
+每周一篇，结合公式、代码、图像与飞书模板，强调 用“空间直觉”洞察结构、效率与注意力流动。
 
 ---
 
@@ -29,6 +29,8 @@ AI Space Geometry 是一个跨学科项目：
 |------|------|-----------|-----------|------|
 | Week 1 | 梯度的山谷 Gradient Valley | Gradient Descent / Loss Surface | 门店能量坡度分析 | [📘 Read](./Week01_GradientValley/README.md) |
 | Week 2 | 顾客路径的向量空间 Vector Field | Vector Field / Cosine Similarity | 顾客动线聚类与吸引力中心 | [📘 Read](./Week02_VectorField/README.md) |
+| Week 3 | 能量的形状 The Shape of Energy | Loss Landscape / Stability | 陈列结构稳定性与风险诊断 | [📘 Read](./Week03_EnergyShape/README.md) |
+| Week 4 | 时间的曲线 The Curve of Time | Exponential Growth / Memory | 复购曲线与留存建模 | [📘 Read](./Week04_TimeCurve/README.md) |
 
 <!-- WEEK_INDEX_END -->
 
