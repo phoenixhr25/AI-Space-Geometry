@@ -24,16 +24,16 @@
 θ 的每一个位置，都对应着能量面上的一个高度。
 
 梯度下降在能量面上的运动
-![gd](https://latex.codecogs.com/svg.image?\theta_{t+1}=\theta_t-\eta\nabla_\theta
- L(\theta_t))
-这是 Week 1 的“下山公式”，
+![gd](https://latex.codecogs.com/svg.image?\theta_{t+1}=\theta_t-\eta\nabla_{\theta}L(\theta_t))
 
+这是 Week 1 的“下山公式”，  
 但在这一周，我们关注的是：在什么样的地形上，这个公式才是安全的？
 
-**能量形状与稳定性（直觉表达）**
-![flat](https://latex.codecogs.com/svg.image?\text{Flat\ minima}\Rightarrow\text{Stability})
+### 能量形状与稳定性（直觉表达）
 
-![sharp](https://latex.codecogs.com/svg.image?\text{Sharp\ minima}\Rightarrow\text{Instability})
+![flat](https://latex.codecogs.com/svg.image?Flat\minima\Rightarrow Stability)
+
+![sharp](https://latex.codecogs.com/svg.image?Sharp\ minima\Rightarrow Instability)
 
  宽谷（Flat Minima）：
  参数微小扰动，能量变化不大 → 稳定
