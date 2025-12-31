@@ -54,16 +54,16 @@
 store_id,path_id,start_x,start_y,end_x,end_y,dx,dy,basket_sales
 8119,v_0001,0.0,5.2,6.5,7.8,6.5,2.6,120.0
 
+---
 
-
-
-## Python 示例（Vector Field + Flow Families）
-
+## 📊 Python 示例：（Vector Field + Flow Families）
 目标：
 1）把每条顾客路径变成方向向量
 2）用方向聚类得到 Flow Families
 3）用 不同颜色在图上展示不同 Flow
 4）画出每个 Flow 的 主流线（Flow Line）
+
+```python
 
 import numpy as np
 import pandas as pd
