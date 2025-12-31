@@ -67,9 +67,9 @@
 
 在实际分析中，能量形状可由以下指标刻画：
 
-SKU 销量分布 CV / Gini
-Top SKU 销量占比
-类目销售集中度曲线
+ * SKU 销量分布 CV / Gini
+ * Top SKU 销量占比
+ * 类目销售集中度曲线
 
 这些指标不是为了“打分”，而是为了判断：结构，是靠形态，还是靠偶然？
 
@@ -78,20 +78,18 @@ Top SKU 销量占比
  👉 [《能量形状效率分析》](https://ai.feishu.cn/sheets/xxxx)（飞书 Pro 模板）
 
  包括：
- 类目 / 区域销量分布曲线
- 能量“陡峭度”评分
- 稳定性风险提示（对断货 / 促销敏感度）
+  * 类目 / 区域销量分布曲线
+  * 能量“陡峭度”评分
+  * 稳定性风险提示（对断货 / 促销敏感度）
 
-_用来回答：“这个增长，站在宽谷里，还是站在刀锋上？”_
+ 用来回答：“这个增长，站在宽谷里，还是站在刀锋上？”
 
 ---
 
 ## 🧭 现代继承版本（Architecture Evolution）
 
- Sharp Minima → Flat Minima 理论
- 
+ Sharp Minima → Flat Minima 理论 
  Noise as Regularization
- 
  Stability over Optimality
 
 ---
