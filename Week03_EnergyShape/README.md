@@ -30,12 +30,10 @@
 
 但在这一周，我们关注的是：在什么样的地形上，这个公式才是安全的？
 
-能量形状与稳定性（直觉表达）
-![flat](https://latex.codecogs.com/svg.image?\text{Flat\
- minima}\Rightarrow\text{Stability})
+**能量形状与稳定性（直觉表达）**
+![flat](https://latex.codecogs.com/svg.image?\text{Flat\ minima}\Rightarrow\text{Stability})
 
-![sharp](https://latex.codecogs.com/svg.image?\text{Sharp\
- minima}\Rightarrow\text{Instability})
+![sharp](https://latex.codecogs.com/svg.image?\text{Sharp\ minima}\Rightarrow\text{Instability})
 
  宽谷（Flat Minima）：
  参数微小扰动，能量变化不大 → 稳定
@@ -44,7 +42,7 @@
  参数轻微变化，能量剧烈震荡 → 脆弱
 
 **🧠 AI 视角：为什么“噪声”反而有用**
-在实践中，许多__机_制___的真实作用，并不是“更快下降”，而是重塑能量的形状：
+在实践中，许多_机制_的真实作用，并不是“更快下降”，而是重塑能量的形状，比如：
  Regularization	抬高尖锐谷底
  SGD Noise	帮助逃离狭窄最优
  Momentum	跨越浅沟壑，进入宽谷
