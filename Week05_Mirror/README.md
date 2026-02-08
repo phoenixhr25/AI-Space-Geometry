@@ -1,10 +1,12 @@
-Week 5 · 模型的镜像（The Mirror of Models）
+# Week 5 · 模型的镜像（The Mirror of Models）
 
 📅 2025.12.30 – 2026.01.05
 📍 AI Space Geometry 系列｜Geometry × Retail × AI
 🎯 主题：模型不是答案，而是数据的镜子
 
-🧭 几何视角（Geometry View）
+---
+
+## 🧭 几何视角（Geometry View）
 
 模型从来不是“理解世界”的主体，它只是世界在参数空间里的投影。
 
@@ -15,7 +17,9 @@ Week 5 · 模型的镜像（The Mirror of Models）
 
 模型并不创造结构，它只是把数据的几何形状折叠、拉伸、重排，直到它能被压缩、被预测、被重建。
 
-🧮 数学定义
+---
+
+## 🧮 数学定义
 
 特征映射（Feature Map）：
 ![feature_map](https://latex.codecogs.com/svg.image?%5Cphi(x)=Wx+b)
@@ -27,7 +31,8 @@ Week 5 · 模型的镜像（The Mirror of Models）
 
 潜空间（Latent Space）并不是“隐藏真理”，而是数据在模型眼中的样子。
 
-🧠 AI 视角：为什么看特征图比看准确率更重要
+---
+## 🧠 AI 视角：为什么看特征图比看准确率更重要
 
 当模型失败时，往往不是“没学会”，而是镜子变形了：
   过拟合：镜子过于贴近噪声
@@ -35,31 +40,33 @@ Week 5 · 模型的镜像（The Mirror of Models）
   偏置：镜子只反射局部
   漏看：镜子根本没照到
 
-这也是为什么：
-CNN 要看 Feature Map；AutoEncoder 要看 Reconstruction；Transformer 要看 Attention Map。因为模型的解释性，藏在镜像里，而不是指标里。
+这也是为什么：CNN 要看 Feature Map；AutoEncoder 要看 Reconstruction；Transformer 要看 Attention Map。因为模型的解释性，藏在镜像里，而不是指标里。
 
-🛒 零售映射：空间的镜像设计
+---
+## 🛒 零售映射：空间的镜像设计
 
 把门店想象成一个“物理模型”：
 
-左侧陈列 ≈ 左特征通道
-
-右侧陈列 ≈ 右特征通道
-
-中轴线 ≈ 潜空间对称轴
+  左侧陈列 ≈ 左特征通道
+  
+  右侧陈列 ≈ 右特征通道
+  
+  中轴线 ≈ 潜空间对称轴
 
 左右布局的不对称，会放大顾客心理偏好；过度镜像，会导致选择疲劳；合理镜像，能让顾客“觉得顺”，却说不出原因。
 
-好的陈列设计，本质是：让空间成为顾客心理的镜子。
+的陈列设计，本质是：让空间成为顾客心理的镜子。
 
-🧰 示例指标（结构层）
+---
+## 🧰 示例指标（结构层）
 
 左右区销售对称度（L/R Ratio）
 特征空间覆盖率（SKU × 区域）
 镜像失衡指数（Mirror Imbalance Index）
 重建误差（陈列→购买路径）
 
-📊 输出模板（Pro）
+---
+## 📊 输出模板（Pro）
 
 👉 《镜像空间设计》
 
@@ -67,7 +74,8 @@ CNN 要看 Feature Map；AutoEncoder 要看 Reconstruction；Transformer 要看 
 
 用来回答：这个空间，是在反射顾客，还是在误导顾客？
 
-🧭 现代继承版本（Architecture Evolution）
+---
+## 🧭 现代继承版本（Architecture Evolution）
   Feature Map → Latent Space
   AutoEncoder → Representation Learning
   Attention Map → Cognitive Mirror
